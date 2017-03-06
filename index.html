@@ -1,1 +1,20 @@
-<h1>This page is under construction</h1>
+<!doctype html>
+<html ng-app="myapp">
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
+  <script type="text/javascript" src="app/sample.controller.js"></script>
+</head>
+<body>
+
+  <div>
+    <h1>We are working on this</h1>
+    <div ng-include="'app/sample.html'"></div>
+
+    <div ng-controller="Sample">
+      {{sampleText}}
+    </div>
+
+  </div>
+
+</body>
+</html>
