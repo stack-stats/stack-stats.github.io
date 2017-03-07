@@ -1,20 +1,30 @@
 <!doctype html>
-<html ng-app="myapp">
+<html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
-  <script type="text/javascript" src="app/sample.controller.js"></script>
+  <!-- CSS IMPORT HERE -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+  <!-- Javascript IMPORT HERE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+  <script src="https://rawgithub.com/angular/angular.js/v1.0.8/src/bootstrap/bootstrap.js"></script>
+
+  <script type="text/javascript" src="app/app.module.js"></script>
+  <script type="text/javascript" src="app/header.controller.js"></script>
+  <script type="text/javascript" src="app/languageChart/languagechart.controller.js"></script>
+  <script type="text/javascript" src="app/toptagChart/toptagchart.controller.js"></script>
+  <script type="text/javascript" src="app/footer.controller.js"></script>
 </head>
-<body>
+<body ng-app="myapp">
 
-  <div>
-    <h1>We are working on this</h1>
-    <div ng-include="'app/sample.html'"></div>
+	<div ng-include="'app/header.html'"></div>
 
-    <div ng-controller="Sample">
-      {{sampleText}}
-    </div>
+  <div ng-include="'app/languageChart/languagechart.html'"></div>
 
-  </div>
+  <div ng-include="'app/toptagChart/toptagchart.html'"></div>
+
+
+
+  <div ng-include="'app/footer.html'"></div>
 
 </body>
 </html>
