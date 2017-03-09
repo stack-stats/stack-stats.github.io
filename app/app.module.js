@@ -1,1 +1,1 @@
-angular.module('myapp', [/* dependencies */]);
+angular.module('myapp', ['chart.js']);
