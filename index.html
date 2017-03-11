@@ -28,16 +28,22 @@
 <body ng-app="myapp">
 
   <div ng-include="'app/header.html'"></div>
+
+  <!--container-fluid div starts-->
   <div class="container-fluid">
-    <div ng-include="'app/languageChart/languagechart.html'"></div>
-
-    <div ng-include="'app/toptagChart/toptagchart.html'"></div>
-
-
-    <div ng-include="'app/monthlyChart/monthlychart.html'"></div>
-
+    <div class="row">
+      <div class="col-md-6">
+        <div ng-include="'app/languageChart/languagechart.html'"></div>
+      </div>
+      <div class="col-md-6">
+        <div ng-include="'app/monthlyChart/monthlychart.html'"></div>
+      </div>
+    </div>
   </div>
+  <!--container-fluid div ends-->
+
   <div ng-include="'app/footer.html'"></div>
+
   <script type="text/javascript" src="app/app.module.js"></script>
   <script type="text/javascript" src="app/header.controller.js"></script>
   <script type="text/javascript" src="app/languageChart/languagechart.controller.js"></script>
