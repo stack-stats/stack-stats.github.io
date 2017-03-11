@@ -1,0 +1,59 @@
+{
+  "2008": {
+    "c#": 1144,
+    "c++": 447,
+    "c": 224,
+    "php": 350,
+    "ruby": 176,
+    "java": 665,
+    "python": 336,
+    "objective-c": 34,
+    "javascript": 415,
+    "perl": 81,
+    "scala": 2,
+    "r": 2
+  },
+  "2009": {
+    "c#": 544,
+    "c++": 132,
+    "c": 654,
+    "php": 34,
+    "ruby": 234,
+    "java": 22,
+    "python": 3336,
+    "objective-c": 234,
+    "javascript": 11,
+    "perl": 89,
+    "scala": 8,
+    "r": 677
+  },
+  "2010": {
+    "c#": 11,
+    "c++": 123,
+    "c": 56,
+    "php": 764,
+    "ruby": 234,
+    "java": 99,
+    "python": 786,
+    "objective-c": 1232,
+    "javascript": 111,
+    "perl": 556,
+    "scala": 55,
+    "r": 45
+  },
+  "2011": {
+    "c#": 34,
+    "c++": 344,
+    "c": 67,
+    "php": 21,
+    "ruby": 64,
+    "java": 756,
+    "python": 343,
+    "objective-c": 112,
+    "javascript": 234,
+    "perl": 77,
+    "scala": 777,
+    "r": 345
+  }
+
+}
