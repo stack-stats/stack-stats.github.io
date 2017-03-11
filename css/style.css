@@ -1,0 +1,24 @@
+.clean{
+    clear: both;
+}
+.nav-color{
+    background: #3F51B5;
+
+}
+.nav-color a{
+    color: #fff !important;
+}
+.nav-dropdown-color{
+    background: #5C6BC0;
+}
+/*Footer styles*/
+.footer-background{
+    min-height: 150px;
+    background: #212121;
+}
+.footer-background ul li a:hover{
+    background: none;
+}
+.footer-background  .bottom-nav{
+    margin: 20px 0 ;
+}

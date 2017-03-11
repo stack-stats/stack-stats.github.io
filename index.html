@@ -1,8 +1,21 @@
 <!doctype html>
 <html>
+
 <head>
+  <!--Bootstrap resources here-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
   <!-- CSS IMPORT HERE -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"> -->
 
   <!-- Javascript IMPORT HERE -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
@@ -11,23 +24,25 @@
   <script src="https://cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min.js"></script>
 
 </head>
+
 <body ng-app="myapp">
 
-	<div ng-include="'app/header.html'"></div>
+  <div ng-include="'app/header.html'"></div>
+  <div class="container-fluid">
+    <div ng-include="'app/languageChart/languagechart.html'"></div>
 
-  <div ng-include="'app/languageChart/languagechart.html'"></div>
-
-  <div ng-include="'app/monthlyChart/monthlychart.html'"></div>
+    <div ng-include="'app/toptagChart/toptagchart.html'"></div>
 
 
+    <div ng-include="'app/monthlyChart/monthlychart.html'"></div>
 
+  </div>
   <div ng-include="'app/footer.html'"></div>
-
   <script type="text/javascript" src="app/app.module.js"></script>
   <script type="text/javascript" src="app/header.controller.js"></script>
   <script type="text/javascript" src="app/languageChart/languagechart.controller.js"></script>
   <script type="text/javascript" src="app/monthlyChart/monthlychart.controller.js"></script>
   <script type="text/javascript" src="app/footer.controller.js"></script>
-
 </body>
+
 </html>
