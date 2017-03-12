@@ -19,7 +19,7 @@
     $scope.years = [];
     $scope.labels = [];
     $scope.data = [];
-    $scope.selectedYear = {id: "2011", name: "2011"};
+    $scope.selectedYear = {id: "2016", name: "2016"};
 
     // $scope.labels = ["C#", "C++", "C", "PHP", "Ruby", "Java", "Python","Objective-C", "JavaScript", "Perl", "Scala", "R"];
     $scope.series = ['Series A', 'Series B'];
