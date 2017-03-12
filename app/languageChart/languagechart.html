@@ -1,5 +1,15 @@
-<div ng-controller="LanguageChartController">
-	<h2>Language Chart here</h2>
+<div ng-controller="LanguageChartController" class="box-layout">
+  <div class="box-title">
+    <h2>Language Chart here</h2>
+    <ul class="nav navbar-right panel_toolbox">
+      <li><a class="collapse-link"><i class="fa fa-question"></i></a>
+      </li>
+      <li><a class="close-link"><i class="fa fa-close"></i></a>
+      </li>
+    </ul>
+    <div class="clean"></div>
+  </div>
+  
 
   <canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-colors="colours"> </canvas>
 
