@@ -1,0 +1,9 @@
+<div ng-controller="MonthlyChartController">
+  <h2>Monthly Chart here</h2>
+
+  <canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-colors="colours"> </canvas>
+
+  <select name="singleSelect" ng-model="selectedYear" ng-options="option.name for option in years track by option.id">
+  </select>
+
+</div>
