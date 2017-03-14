@@ -2,7 +2,7 @@
     'use strict';
 
     var footerController = function ($scope) {
-        
+
     };
 
     footerController.$inject = ['$scope'];
