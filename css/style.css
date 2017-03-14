@@ -51,7 +51,7 @@ body {
 /*Footer styles*/
 
 .footer-background {
-    min-height: 150px;
+    min-height: 160px;
     background: #e7e7e7;
 }
 
@@ -61,4 +61,13 @@ body {
 
 .footer-background .bottom-nav {
     margin: 20px 0;
+}
+.copyright{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 125px;
+    padding: 5px;
 }
