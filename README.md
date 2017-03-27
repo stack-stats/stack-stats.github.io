@@ -6,7 +6,6 @@ All charts represent more than 12 million question data from Stackoverflow. You 
 
 ## Language Chart
 
-
 ![Language Chart](http://i.imgur.com/vY4klka.png)
 
 Language Chart has number of questions over the most famous Programming Languages. And also you can look into various years from 2008 to 2016.
