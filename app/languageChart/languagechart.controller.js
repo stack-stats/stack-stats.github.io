@@ -24,30 +24,30 @@
     $scope.colours = ['#72C02C', '#3498DB', '#717984', '#F1C40F'];
 
 
-  var manageData = function(){
-    $scope.labels = [];
-    $scope.data = [];
+    var manageData = function(){
+      $scope.labels = [];
+      $scope.data = [];
 
-    for (var tag in $scope.tags[$scope.selectedYear.id]) {
-      $scope.labels.push(tag);
-      $scope.data.push($scope.tags[$scope.selectedYear.id][tag]);
+      for (var tag in $scope.tags[$scope.selectedYear.id]) {
+        $scope.labels.push(tag);
+        $scope.data.push($scope.tags[$scope.selectedYear.id][tag]);
+      }
     }
-  }
 
-  var manageJson = function() {
-    var count = 0;
-    for (var year in $scope.tags) {
-      var object = {};
-      object.id = year;
-      object.name = year
-      $scope.years.push(object);
-    }
-  };
+    var manageJson = function() {
+      var count = 0;
+      for (var year in $scope.tags) {
+        var object = {};
+        object.id = year;
+        object.name = year
+        $scope.years.push(object);
+      }
+    };
 
-  var initialize = function() {
-  };
+    var initialize = function() {
+    };
 
-  initialize();
+    initialize();
 
 };
 

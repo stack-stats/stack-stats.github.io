@@ -1,12 +1,19 @@
 <div ng-controller="ToptagChartController" class="box-layout">
-	<div class="box-title">
-		<h2>Top Tag Chart here</h2>
-		<ul class="nav navbar-right panel_toolbox">
-			<li><a class="collapse-link"><i class="fa fa-question"></i></a>
-			</li>
-			<li><a class="close-link"><i class="fa fa-close"></i></a>
-			</li>
-		</ul>
-		<div class="clean"></div>
-	</div>
+  <div class="box-title">
+    <h2>Top Tag Chart</h2>
+    <ul class="nav navbar-right panel_toolbox">
+      <li><a class="collapse-link"><i class="fa fa-question"></i></a>
+      </li>
+      <li><a class="close-link"><i class="fa fa-close"></i></a>
+      </li>
+    </ul>
+    <div class="clean"></div>
+  </div>
+  
+
+  <canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-colors="colours"> </canvas>
+
+  <select name="singleSelect" ng-model="selectedYear" ng-options="option.name for option in years track by option.id">
+  </select>
+
 </div>
