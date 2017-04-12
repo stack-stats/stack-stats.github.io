@@ -1,19 +1,21 @@
-<div ng-controller="LanguageChartController" class="box-layout">
-  <div class="box-title">
-    <h2>Language Chart here</h2>
-    <ul class="nav navbar-right panel_toolbox">
-      <li><a class="collapse-link"><i class="fa fa-question"></i></a>
-      </li>
-      <li><a class="close-link"><i class="fa fa-close"></i></a>
-      </li>
+<div class="chart-block" ng-controller="LanguageChartController" class="box-layout">
+   <h4 class="pull-left">Language Chart</h4>
+   <div class="dropdown pull-right">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      2011
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <li><a href="#">2011</a></li>
+      <li><a href="#">2011</a></li>
+      <li><a href="#">2011</a></li>
     </ul>
-    <div class="clean"></div>
   </div>
-  
+   <canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-colors="colours"> </canvas>
 
-  <canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-colors="colours"> </canvas>
+  <!-- <select name="singleSelect" ng-model="selectedYear" ng-options="option.name for option in years track by option.id">
+  </select> -->
 
-  <select name="singleSelect" ng-model="selectedYear" ng-options="option.name for option in years track by option.id">
-  </select>
+
 
 </div>
