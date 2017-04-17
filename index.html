@@ -2,8 +2,9 @@
 <html>
 
 <head>
+  <title>Stack Stats</title>
   <!--Bootstrap resources here-->
-  
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -17,9 +18,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min.js"></script>
-   <!-- Latest compiled and minified JavaScript -->
+  <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script>
 
 </head>
 
@@ -27,63 +28,24 @@
 
   <div ng-include="'app/header.html'"></div>
 
-  <!--container-fluid div starts-->
-<!--   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4">
-        <div ng-include="'app/languageChart/languagechart.html'"></div>
-      </div>
-      <div class="col-md-4">
-        <div ng-include="'app/monthlyChart/monthlychart.html'"></div>
-      </div>
-      <div class="col-md-4">
-        <div ng-include="'app/toptagChart/toptagchart.html'"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div ng-include="'app/comingsoon.html'"></div>
-      </div>
-      <div class="col-md-4">
-        <div ng-include="'app/comingsoon.html'"></div>
-      </div>
-      <div class="col-md-4">
-        <div ng-include="'app/comingsoon.html'"></div>
-      </div>
-    </div>
-  </div> -->
-  <!--container-fluid div ends-->
-
   <div class="container">
     <div class="content-block row">
       <div class="col-md-3">
         <nav class="side-nav hidden-xs affix-top bs-docs-sidebar" data-spy="affix" data-offset-top="90">
-            <div class="logo-nav">
-              <img src="img/logo-mono.png">
-            </div>
-            <ul id="sidebar" class="nav main-nav">
-                <li>
-                    <a href="#languagechart">languagechart</a>
-                    <!-- <ul class="nav nav-stacked">
-                        <li><a href="#GroupASub1">Sub-Group 1</a></li>
-                        <li><a href="#GroupASub2">Sub-Group 2</a></li>
-                    </ul> -->
-                </li>
-                <li>
-                    <a href="#monthlychart">monthlychart</a>
-                    <!-- <ul class="nav nav-stacked">
-                        <li><a href="#GroupBSub1">Sub-Group 1</a></li>
-                        <li><a href="#GroupBSub2">Sub-Group 2</a></li>
-                    </ul> -->
-                </li>
-                <li>
-                    <a href="#toptagchart">toptagchart</a>
-                    <!-- <ul class="nav nav-stacked">
-                        <li><a href="#GroupCSub1">Sub-Group 1</a></li>
-                        <li><a href="#GroupCSub2">Sub-Group 2</a></li>
-                    </ul> -->
-                </li>
-            </ul>
+          <div class="logo-nav">
+            <img src="img/logo-mono.png">
+          </div>
+          <ul id="sidebar" class="nav main-nav">
+            <li>
+              <a href="#languagechart">languagechart</a>
+            </li>
+            <li>
+              <a href="#monthlychart">monthlychart</a>
+            </li>
+            <li>
+              <a href="#toptagchart">toptagchart</a>
+            </li>
+          </ul>
         </nav>
       </div>
       <div class="col-md-9">
@@ -97,19 +59,16 @@
     <div class="clearfix"></div>
   </div>
 
-<!--   <div ng-include="'app/footer.html'"></div> -->
-  <script type="text/javascript">
-    $('body').scrollspy({
-        target: '.bs-docs-sidebar'
-    });
-
-  </script>
   <script type="text/javascript" src="app/app.module.js"></script>
   <script type="text/javascript" src="app/header.controller.js"></script>
   <script type="text/javascript" src="app/languageChart/languagechart.controller.js"></script>
   <script type="text/javascript" src="app/monthlyChart/monthlychart.controller.js"></script>
   <script type="text/javascript" src="app/toptagChart/toptagchart.controller.js"></script>
   <script type="text/javascript" src="app/footer.controller.js"></script>
+
+  <!-- Core -->
+  <script type="text/javascript" src="app/core/directives/stDropdown/stDropdown.directive.js"></script>
+
 </body>
 
 </html>

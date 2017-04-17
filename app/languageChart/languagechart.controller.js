@@ -10,12 +10,12 @@
       manageData();
     });
 
-    $scope.yearSelect = function(year){
-      $scope.selectedYear = year;
+    $scope.yearSelect = function(value){
+      $scope.selectedYear = value;
       if ($scope.tags){
         manageData();
       }
-    }
+    };
 
     $scope.years = [];
     $scope.labels = [];
@@ -33,7 +33,7 @@
         $scope.labels.push(tag);
         $scope.data.push($scope.tags[$scope.selectedYear.id][tag]);
       }
-    }
+    };
 
     var manageJson = function() {
       var count = 0;
@@ -45,12 +45,7 @@
       }
     };
 
-    var initialize = function() {
-    };
-
-    initialize();
-
-};
+  };
 
   languageChartController.$inject = ['$scope', '$http'];
 
