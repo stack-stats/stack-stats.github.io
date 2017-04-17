@@ -10,11 +10,12 @@
         manageData();
       });
 
-      $scope.$watch('selectedYear', function(newVal, oldVal){
+      $scope.yearSelect = function(year){
+        $scope.selectedYear = year;
         if ($scope.tags){
           manageData();
         }
-      });
+      }
 
       $scope.years = [];
       $scope.labels = [];
