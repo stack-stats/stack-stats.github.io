@@ -10,12 +10,12 @@
       manageData();
     });
 
-    $scope.yearSelect = function(year){
-      $scope.selectedYear = year;
+    $scope.yearSelect = function(value){
+      $scope.selectedYear = value;
       if ($scope.months){
         manageData();
       }
-    }
+    };
 
     $scope.years = [];
     $scope.labels = [];
@@ -40,22 +40,17 @@
       var lastData = $scope.data.slice(0,3);
       $scope.data = $scope.data.slice(3, 12);
       $scope.data = $scope.data.concat(lastData);
-    }
+    };
 
     var manageJson = function() {
       var count = 0;
       for (var year in $scope.months) {
         var object = {};
         object.id = year;
-        object.name = year
+        object.name = year;
         $scope.years.push(object);
       }
     };
-
-    var initialize = function() {
-    };
-
-    initialize();
 
   };
 

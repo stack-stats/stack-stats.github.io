@@ -1,17 +1,7 @@
-<div class="chart-block" ng-controller="ToptagChartController" class="box-layout"> 
+<div class="chart-block" ng-controller="ToptagChartController" class="box-layout">
   <h4 class="pull-left">Toptag Chart</h4>
 
-  <div class="dropdown pull-right">
-    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-      {{selectedYear.name}}
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-      <li ng-repeat="year in years">
-        <a ng-click="yearSelect(year)">{{year.name}}</a> 
-      </li>
-    </ul>
-  </div>
+  <st-dropdown model="selectedYear" datasource="years" selectcallback="yearSelect(value)"></st-dropdown>
 
   <canvas id="toptag" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-colors="colours"> </canvas>
 
