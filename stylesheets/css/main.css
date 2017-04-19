@@ -514,7 +514,7 @@ html {
  */
 /* line 25, C:/Users/janin/OneDrive/Documents/stack-stats.github.io/stylesheets/sass/base/_base.scss */
 a {
-  color: #e50050;
+  color: #222222;
   text-decoration: none;
 }
 
@@ -748,3 +748,7 @@ body {
 }
 
 /*# sourceMappingURL=../css/main.map */
+
+#github-logo {
+  padding-top: 17px;
+}
