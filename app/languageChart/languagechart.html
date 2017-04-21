@@ -1,8 +1,10 @@
 <div class="chart-block" ng-controller="LanguageChartController" class="box-layout">
-   <h4 class="pull-left">Language Chart</h4>
+  <h4 class="pull-left">Language Chart</h4>
 
   <st-dropdown model="selectedYear" datasource="years" selectcallback="yearSelect(value)"></st-dropdown>
 
-   <canvas id="langulage" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-colors="colours"> </canvas>
+  <canvas id="langulage" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-colors="colours"> </canvas>
+
+  <p class="pull-left">Language chart shows specific set of Programming langulages & how question count changed over the past years. If you want any other Programming langulage to compare as well, create an issue in our repository. We will add it as well</p>
 
 </div>
