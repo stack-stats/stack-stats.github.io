@@ -2,54 +2,32 @@
     clear: both;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f4f5fe;
+body {
+    font-family: $text-font-stack;
+    background: #f4f5fe;
 }
 
-/*box-layout styles*/
+p {
+    font-size: 14px;
+    color: #999999;
+}
 
-// .box-layout {
-//     width: 100%;
-//     padding: 10px 17px;
-//     display: inline-block;
-//     background: #fff;
-//     border: 1px solid #E6E9ED;
-//     margin: 5px;
-// }
-
-// .box-title {
-//     border-bottom: 2px solid #E6E9ED;
-//     padding: 1px 5px 6px;
-//     color: #73879C;
-//     margin: 0 0 8px 0;
-// }
-
-// .box-title h2{
-//     margin: 0;
-//     font-weight: 400;
-//     font-size: 24px;
-//     float: left;
-//     line-height:25pt;
-// }
-// .panel_toolbox>li {
-//     float: left;
-//     cursor: pointer;
-// }
-
-.content-block{
+.content-block {
+    background: #ffffff;
     width: 100%;
-    background-color: #ffffff;
     border-radius: 4px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    margin-top: -100px;
 }
 
-.charts-container{
+.charts-container {
     position: relative;
     width: 100%;
     overflow: auto;
-
-    .chart-block{
+    .chart-block {
         padding: 65px;
+    }
+    canvas {
+        margin: 10px 0;
     }
 }

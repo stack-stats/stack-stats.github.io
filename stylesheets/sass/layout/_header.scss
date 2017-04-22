@@ -1,3 +1,29 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.header {
+    display: block;
+    padding: 40px 0 130px 0px;
+    background: #5C258D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4389A2, #5C258D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4389A2, #5C258D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.brand {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.git-repo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    & a {
+        color: #ffffff;
+    }
+}
