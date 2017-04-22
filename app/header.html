@@ -1,28 +1,14 @@
 <div ng-controller="HeaderController as vm">
-<nav class="navbar navbar-default nav-color">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="img/brand.png"></a>
+    <div class="header">
+        <div class="brand">
+            <img src="img/logo-white.png" alt="Stat-stack brand logo">
+        </div>
+        <div class="git-repo">
+            <a href="https://github.com/stack-stats/stack-stats.github.io" target="_blank">
+                <i class="fa fa-github" aria-hidden="true" style="font-size: 3em" id="github-logo"></i>
+            </a>
+        </div>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-      <ul class="nav navbar-nav navbar-right">
-        <a href="https://github.com/stack-stats/stack-stats.github.io" target="_blank">
-          <i class="fa fa-github" aria-hidden="true" style="font-size: 3em" id="github-logo"></i>
-        </a>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-	{{header}}
+    {{header}}
 </div>

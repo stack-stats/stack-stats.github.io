@@ -2,78 +2,84 @@
 <html>
 
 <head>
-  <title>Stack Stats</title>
-  <!--Bootstrap resources here-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Stack Stats</title>
+    <!--Bootstrap resources here-->
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-  <!-- CSS IMPORT HERE -->
-  <link rel="stylesheet" href="stylesheets/css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- CSS IMPORT HERE -->
+    <link rel="stylesheet" href="stylesheets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-  <!-- Javascript IMPORT HERE -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-  crossorigin="anonymous"></script>
+    <!-- Javascript IMPORT HERE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </head>
 
 <body ng-app="myapp">
 
-  <div ng-include="'app/header.html'"></div>
-
-  <div class="container">
-    <div class="content-block row">
-      <div class="col-md-3">
-        <nav class="side-nav hidden-xs affix-top bs-docs-sidebar" data-spy="affix" data-offset-top="90">
-          <div class="logo-nav">
-            <img src="img/logo-mono.png">
-          </div>
-          <ul id="sidebar" class="nav main-nav">
-            <li>
-              <a href="#languagechart">Language chart</a>
-            </li>
-            <li>
-              <a href="#tagsoveryearsChart">Tags Over Years chart</a>
-            </li>
-            <li>
-              <a href="#monthlychart">Monthly chart</a>
-            </li>
-            <li>
-              <a href="#toptagchart">Toptag chart</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col-md-9">
-        <div class="charts-container">
-          <div id="languagechart" ng-include="'app/languageChart/languagechart.html'"></div>
-          <div id="tagsoveryearsChart" ng-include="'app/tagsoveryearsChart/tagsoveryearschart.html'"></div>
-          <div id="monthlychart" ng-include="'app/monthlyChart/monthlychart.html'"></div>
-          <div id="toptagchart" ng-include="'app/toptagChart/toptagchart.html'"></div>
+    <div ng-include="'app/header.html'"></div>
+    <div class="container">
+        <div class="content-block row">
+            <div class="col-md-3">
+                <nav class="side-nav hidden-xs affix-top bs-docs-sidebar" data-spy="affix" data-offset-top="167">
+                    <div class="logo-nav">
+                        <img src="img/logo-mono.png">
+                    </div>
+                    <ul id="sidebar" class="nav main-nav">
+                        <li>
+                            <a href="#languagechart">Language chart</a>
+                        </li>
+                        <li>
+                            <a href="#tagsoveryearsChart">Tags Over Years chart</a>
+                        </li>
+                        <li>
+                            <a href="#monthlychart">Monthly chart</a>
+                        </li>
+                        <li>
+                            <a href="#toptagchart">Toptag chart</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-9">
+                <div class="charts-container">
+                    <div id="languagechart" ng-include="'app/languageChart/languagechart.html'"></div>
+                    <div id="tagsoveryearsChart" ng-include="'app/tagsoveryearsChart/tagsoveryearschart.html'"></div>
+                    <div id="monthlychart" ng-include="'app/monthlyChart/monthlychart.html'"></div>
+                    <div id="toptagchart" ng-include="'app/toptagChart/toptagchart.html'"></div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="clearfix"></div>
     </div>
-    <div class="clearfix"></div>
-  </div>
 
-  <script type="text/javascript" src="app/app.module.js"></script>
-  <script type="text/javascript" src="app/header.controller.js"></script>
-  <script type="text/javascript" src="app/languageChart/languagechart.controller.js"></script>
-  <script type="text/javascript" src="app/monthlyChart/monthlychart.controller.js"></script>
-  <script type="text/javascript" src="app/toptagChart/toptagchart.controller.js"></script>
-  <script type="text/javascript" src="app/tagsoveryearsChart/tagsoveryearschart.controller.js"></script>
-  <script type="text/javascript" src="app/footer.controller.js"></script>
+    <div ng-include="'app/footer.html'"></div>
 
-  <!-- Core -->
-  <script type="text/javascript" src="app/core/directives/stDropdown/stDropdown.directive.js"></script>
+    <script type="text/javascript" src="app/app.module.js"></script>
+    <script type="text/javascript" src="app/header.controller.js"></script>
+    <script type="text/javascript" src="app/languageChart/languagechart.controller.js"></script>
+    <script type="text/javascript" src="app/monthlyChart/monthlychart.controller.js"></script>
+    <script type="text/javascript" src="app/toptagChart/toptagchart.controller.js"></script>
+    <script type="text/javascript" src="app/tagsoveryearsChart/tagsoveryearschart.controller.js"></script>
+    <script type="text/javascript" src="app/footer.controller.js"></script>
 
+    <!-- Core -->
+    <script type="text/javascript" src="app/core/directives/stDropdown/stDropdown.directive.js"></script>
+    <script type="text/javascript">
+        $('body').scrollspy({
+            target: '.bs-docs-sidebar'
+        });
+    </script>
 </body>
 
 </html>
