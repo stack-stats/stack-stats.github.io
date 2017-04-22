@@ -1,0 +1,10 @@
+<div class="chart-block" ng-controller="TagsoveryearsChartController" class="box-layout">
+  <h4 class="pull-left">Tags over years Chart</h4>
+
+  <st-dropdown model="selectedTag" datasource="tagList" selectcallback="yearSelect(value)"></st-dropdown>
+
+  <canvas id="tagsoveryears" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-colors="colours"> </canvas>
+
+  <p class="pull-left">Tags over years chart shows how a programming language question count changed over the years. If you want any other Programming langulage to compare, create an issue in our repository. We will add it as well.</p>
+
+</div>
