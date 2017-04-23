@@ -1,0 +1,10 @@
+<div class="chart-block" ng-controller="LocationRepChartController" class="box-layout">
+  <h4 class="pull-left">User Reputation Chart</h4>
+
+  <st-dropdown model="selectedSlot" datasource="slotList" selectcallback="select(value)"></st-dropdown>
+
+  <canvas id="tagsoveryears" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-colors="colours"> </canvas>
+
+  <p class="pull-left">User Reputation chart right now showing only Sri Lankan users. Last Reputation updated date is 15th March 2017. Because of that the reputation showing here might be bit old than actual reputation. If you want your country too, create an issue in our repository. We will add it as well.</p>
+
+</div>
