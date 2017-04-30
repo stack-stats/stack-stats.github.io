@@ -1,0 +1,10 @@
+<div class="chart-block" ng-controller="AnsweredUnansweredController" class="box-layout">
+  <h4 class="pull-left">Answered Unanswered ratio Chart</h4>
+
+  <st-dropdown model="selectedTag" datasource="tagList" selectcallback="tagSelect(value)"></st-dropdown>
+
+  <canvas id="tagsoveryears" class="chart chart-pie" chart-data="data" chart-labels="labels" chart-colors="colours">> </canvas>
+
+  <p class="pull-left">Answered Unanswered ratio chart shows the number of answered & unanswered questions were there for each programming language tag. If you want any other Programming langulage to compare, create an issue in our repository. We will add it as well.</p>
+
+</div>
