@@ -1,0 +1,74 @@
+{
+  "c#": {
+    "answered": 614350,
+    "unanswered": 420233
+  },
+  "c++": {
+    "answered": 297149,
+    "unanswered": 189159
+  },
+  "c": {
+    "answered": 143845,
+    "unanswered": 92532
+  },
+  "php": {
+    "answered": 547185,
+    "unanswered": 461896
+  },
+  "ruby": {
+    "answered": 108528,
+    "unanswered": 64379
+  },
+  "java": {
+    "answered": 623905,
+    "unanswered": 555034
+  },
+  "python": {
+    "answered": 388806,
+    "unanswered": 280728
+  },
+  "objective-c": {
+    "answered": 161024,
+    "unanswered": 109054
+  },
+  "javascript": {
+    "answered": 715221,
+    "unanswered": 559072
+  },
+  "haskell": {
+    "answered": 22395,
+    "unanswered": 8122
+  },
+  "erlang": {
+    "answered": 4766,
+    "unanswered": 2245
+  },
+  "perl": {
+    "answered": 34789,
+    "unanswered": 19402
+  },
+  "scala": {
+    "answered": 37783,
+    "unanswered": 22024
+  },
+  "r": {
+    "answered": 95312,
+    "unanswered": 67616
+  },
+  "swift": {
+    "answered": 63624,
+    "unanswered": 62455
+  },
+  "go": {
+    "answered": 13063,
+    "unanswered": 6306
+  },
+  "rust": {
+    "answered": 4280,
+    "unanswered": 1283
+  },
+  "elixir": {
+    "answered": 2122,
+    "unanswered": 998
+  }
+}
